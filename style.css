@@ -1,0 +1,112 @@
+:root {
+    --background-color: #dfe8de;
+    --text-color: rgb(46, 158, 178);
+    --button-color:rgb(108, 131, 149);
+    --border-color: #636363;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #323030;
+        --text-color:#fff;
+    }
+}
+
+body.dark-mode {
+    --text-color: #e3dede;
+    --background-color:#1d1c1c;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.content{
+    padding-top: 5%;
+    padding-bottom: 2%; 
+}
+
+button {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: var(--button-color);
+    border: solid;
+    border-color: var(--border-color);
+    border-radius: 10%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Onest", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100hv;
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+}
+
+h1 {
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+article {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: justify;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.datetime {
+    color: rgb(255, 255, 255);
+    background-color: rgb(108, 131, 149);
+    border-color: var(--border-color);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px 10px;
+    position: relative;
+    left: 75%;
+}
+
+.h2 { 
+    position: relative;
+    padding-top: 2%;
+}
+
+.article {
+    padding-top: 2%;
+}
+
+footer {
+    background-color: var(--button-color);
+    color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    padding-top: auto;
+}
